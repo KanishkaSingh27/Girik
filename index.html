@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin><link href=
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body bgcolor="black">
+    <img src="logo.png" class="logo">
+    <br>
+    
+    <div class="topnav" id="topnav">
+        <b>
+        <a href="#contact-us" class="left">Connect</a>
+        <a href="#pro" class="left">Prototype</a>
+        <a href="#more" class="left">More Info</a>
+        <a href="#gallery" class="left">Gallery</a>
+        <a href="#abt" class="left">About</a>
+        <a href="#home" class="left">Home</a>
+        </b>
+        </div><br>
+        <div class="content">
+            <img src="#.jpg" class="pic">
+            <br>
+            <h1 class="heading"></h1>
+            <p class="textp1">snddf;ouefn;c;djlfwehiodcnxklewfo;hnrgresmldzdxnfjgnfjegre
+                djanjfljdsdiog'rwnsfkjirwsmkkcdfkljdijrwd'rwjfdnfkeljfejiejje
+                qefjjewhfelqkfmdncsdmklfjwjitrghvfvndsmfkldfkwgbfbmnfd,fewmkgjrggrg
+                ethjdfnsdjkghjrhgj;re
+            </p>
+<section id="abt">
+            <center><h1 class="heading">About Us</h1>
+<p class="textp2">
+    hhedfuipewrhfuprhidishnguipyrhnfsduif89uwerfjkdfhoishfihrgijsnufuerigjehwguwhufihsjdghjdhguirignrejdhguierug
+    rgjheghegheghzsujknjs,kgheruis;zflhruiehwrt443wtferbhdfudshufedghvnjgfhfdsjfkldjkfjidjfkndckajsjfieji
+    dfjhdhfioefdnfjcvvodjsifewfo  ieruewiruoeur
+</p>
+</center></section>
+                </center>
+                <section id="gallery">
+                    <div class="slideshow-container">
+        
+                        <div class="mySlides fade">
+                          
+                          <img src="1.jpg" style="width:100%;">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          
+                          <img src="2.jpg" style="width:100%">
+                         
+                        </div>
+                        
+                        <div class="mySlides fade">
+                         
+                          <img src="3.jpg" style="width:100%; ">
+                          
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                        <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            </script>
+                </section>
+
+        </div>
+        <section id="more">
+            <center><h1 class="heading">More Info</h1>
+                <p class="textp2">fhduufnchugjnvrgrehgdljgvxjgerfl;nldfvldkndlkdsfoig</p>
+            </center>
+        </section>
+        <section id="pro">
+            <center><h1 class="heading">Prototype</h1>
+                <p class="textp2"></p>
+            </center>
+        </section>
+        <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="Fullname" placeholder="Your name..">
+          
+              <label for="email">Email ID</label>
+              <input type="text" id="email" name="email" placeholder="Your Email ID..">
+          
+              <label for="members">Phone Number</label>
+              <input type="number" value="none" placeholder="Your Phone Number..">
+              <label for="subject">Subject</label>
+              
+            
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            
+            <br>
+              <input type="Submit" value="Submit">
+            </form>
+          </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+    <script>
+      feather.replace()
+    </script>
+    <script>
+      mybutton = document.getElementById("myBtn");
+    
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+    </script>
+    <footer>
+        <center>
+        <hr color="#876445">
+        <p style="font-family: 'poppins',sans-serif;font-size:20px;">
+          &copy; Love from Girik team 
+           
+        </p>
+    </footer></center>
+</body>
+</html>
