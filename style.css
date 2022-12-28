@@ -7,6 +7,12 @@ html{
       margin: 0%;
       
   }
+  marquee{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    color:#6be6f7;
+    margin-top:40px;
+  }
   .topnav {
       padding-top: 0px;
       overflow: hidden;
@@ -63,8 +69,12 @@ html{
       width: 350px;
       display: block;
       float: left;
-      margin: 0%;
+      margin: 2%;
       padding-left: 10px;
+      height:50px;
+      width:150px;
+      padding-top: 20px;
+     
     }
     .heading{
        font-family:'Poppins', sans-serif; 
@@ -72,11 +82,22 @@ html{
        
     }
     .textp1 {
-        font-size: 20px;
+        font-size: 25px;
         padding-right: 100px;
         padding-top: 20px;
         margin: 50PX;
         float: left;
+        margin-right:50%;
+        margin-top:-20%;
+        font-family: 'poppins',sans-serif;
+      }
+      .pic{
+        height: 400px;
+        width: 350px;
+        float:right;
+        margin-top:40px;
+        margin-right:60px;
+        border-radius: 20px;
       }
       .textp2{
         margin: 50px;
@@ -84,6 +105,7 @@ html{
         font-size: 25px;
         margin-left:100px;
         margin-right:100px;
+        font-family:'poppins',sans-serif;
       }
     img {vertical-align: middle;}
 
@@ -213,7 +235,7 @@ input[type="submit"]:hover {
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: rgb(202, 157, 88); 
+    background-color: #6be6f7; 
     color: white; 
     cursor: pointer; 
     padding: 10px; 
@@ -224,8 +246,31 @@ input[type="submit"]:hover {
   }
   
   #myBtn:hover {
-    background-color: rgb(255, 187, 124); 
+    background-color:#6be6f7; 
   }
   .up{
   margin-bottom: 20px;
   }
+  table{
+    font-family: 'poppins',sans-serif;
+    border-color:#6be6f7;
+    margin-bottom: 50px;
+  }
+.tr{
+  border-color: #6be6f7;
+  margin: 20px;
+  padding: 20px;
+}
+td{
+  padding:20px;
+}
+th{
+  color: #6be6f7;
+  font-size: 20px;
+}
+
+
+
+
+
+
